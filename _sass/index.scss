@@ -1,12 +1,4 @@
-$content-width: 1200px;
-
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-}
-
 body {
-  min-height: 100vh;
   background-image: url("/assets/blockchain.png");
   background-color: #1f497d;
   background-position: 50% 50%;
@@ -14,23 +6,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.site-header, .site-footer {
-  background-color: #E0E0E0;
-}
-
-.site-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .jumbo {
   padding-top: 10%;
   text-align: center;
-}
-
-.page-heading {
-  color: #FFF;
-  font-size: 3em;
-  text-shadow: 0px 0px 8px #000;
 }
