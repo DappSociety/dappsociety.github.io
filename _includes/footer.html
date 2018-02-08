@@ -1,31 +1,36 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">{{ site.title | escape }}</h5>
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
-            {% include icon-github.html username=site.github_username %}
+            <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-github"></i> <span class="username">Our GitHub</span></a>
           </li>
           {% endif %}
-
           {% if site.twitter_username %}
           <li>
-            {% include icon-twitter.html username=site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fab fa-twitter"></i> <span class="username">Our Twitter</span></a>
+
           </li>
           {% endif %}
         </ul>
+        <p class="grey-text text-lighten-4">{{ site.description | escape }}</p>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <p>{{ site.description | escape }}</p>
+      <div class="col l6 s12">
+        <h5 class="white-text">More links</h5>
+        <ul>
+          <li><a class="white-text" href="https://trello.com/b/Gpm7rwac/town-hall"><i class="fab fa-trello"></i> Trello</a></li>
+          <li><a class="white-text" href="https://dappsociety.slack.com"><i class="fab fa-slack"></i> Slack</a></li>
+          <li><a class="white-text" href="https://medium.com/dappsociety"><i class="fab fa-medium"></i> Medium</a></li>
+        </ul>
       </div>
     </div>
-
   </div>
-
+  <div class="footer-copyright">
+    <div class="container">
+    Created by <a class="brown-text text-lighten-3" href="https://github.com/DappSociety">DappSociety</a>
+    </div>
+  </div>
 </footer>

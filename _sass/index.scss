@@ -1,12 +1,74 @@
 body {
-  background-image: url("/assets/blockchain.png");
-  background-color: #1f497d;
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.jumbo {
-  padding-top: 10%;
-  text-align: center;
+main {
+  flex: 1 0 auto;
+}
+
+nav ul a,
+nav .brand-logo, .button-collapse {
+  color: #444;
+}
+nav .button-collapse {
+  font-size: 1.5em;
+}
+
+#index-banner {
+
+}
+
+// Parallax
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+
+  .section {
+    width: 100%;
+  }
+
+  .header {
+    text-shadow: 0px 0px 8px #000;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+.parallax {
+  background-color: #1f497d;
+}
+
+.icon-block {
+  padding: 0 15px;
+
+  .material-icons {
+    font-size: inherit;
+  }
+}
+
+footer.page-footer {
+  background-color: #1f497d;
+  margin: 0;
+
+  .social-media-list {
+    a, &:visited {
+      color: #fff;
+    }
+  }
 }
