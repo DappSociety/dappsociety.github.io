@@ -10,7 +10,7 @@
           <!-- Desktop Navbar -->
           <ul class="right hide-on-med-and-down">
             <li><a href="{{ site.url }}/digest_archive">Digest Archive</a></li>
-            <li><a href="{{ site.url }}/slack_archive">Slack Archive</a></li>
+            <li><a href="{{ site.url }}/slack_archives">Slack Archive</a></li>
             <li><a href="{{ site.url}}/resources_dashboard">Resources</a></li>
             {% for path in page_paths %}
               {% assign my_page = site.pages | where: "path", path | first %}
@@ -22,7 +22,7 @@
           <!-- Mobile Navbar -->
           <ul id="nav-mobile" class="side-nav">
             <li><a href="{{ site.url }}/digest_archive">Digest Archive</a></li>
-            <li><a href="{{ site.url }}/slack_archive">Slack Archive</a></li>
+            <li><a href="{{ site.url }}/slack_archives">Slack Archive</a></li>
             <li><a href="{{ site.url}}/resources_dashboard">Resources</a></li>
             {% for path in page_paths %}
               {% assign my_page = site.pages | where: "path", path | first %}
