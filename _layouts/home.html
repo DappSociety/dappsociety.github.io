@@ -8,16 +8,75 @@
     {% include header.html %}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <div class="jumbo">
-          <code>Logo goes here</code>
-          <h1 class="page-heading">DappSociety</h1>
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center white-text">DappSociety</h1>
+            <div class="row center">
+              <h5 class="header col s12 light">Decentralized Self-governing Blockchain Research Group</h5>
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="{{ "assets/blockchain.png" | relative_url }}" /></div>
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center"><i class="fas fa-rocket"></i></h2>
+                <h5 class="center">Fast</h5>
+                <p class="light"><code>TODO: Add something here</code></p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center"><i class="fas fa-users"></i></h2>
+                <h5 class="center">Controlled by the people</h5>
+                <p class="light"><code>TODO: Add something here</code></p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <h2 class="center"><i class="fas fa-th"></i></h2>
+                <h5 class="center">Blockchain research</h5>
+                <p class="light"><code>TODO: Add something here</code></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <div class="row center">
+              <h4 class="header col s12 light">Some cool intermediary text</h4>
+            </div>
+          </div>
+        </div>
+        <div class="parallax"><img src="{{ "assets/blockchain.png" | relative_url }}" /></div>
+      </div>
+
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 center">
+              <h4>Mission</h4>
+              <div class="left-align light">
+              <p>The purpose of this group is to connect with like minded individuals, build a community around common goals, and to collectively build new skills that will be useful in a blockchain future. You could think of it as a talent incubator.</p>
+              <p>Eventually we want to be an all-inclusive, permissionless group. This would allow anyone, no matter their age, experience, or skill level, to contribute to our projects in whatever way they can, building their skills in the process, and receiving value for their contributions.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     {% include footer.html %}
-
+    {% include scripts.html %}
   </body>
-
 </html>
