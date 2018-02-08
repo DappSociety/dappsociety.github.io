@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav ul a,
+nav .brand-logo, .button-collapse {
+  color: #444;
+}
+nav .button-collapse {
+  font-size: 1.5em;
+}
+
+.icon-block {
+  padding: 0 15px;
+
+  .material-icons {
+    font-size: inherit;
+  }
+}
+
+footer.page-footer {
+  background-color: #1f497d;
+  margin: 0;
+
+  .social-media-list {
+    a, &:visited {
+      color: #fff;
+    }
+  }
+}
+
+.page-content {
+  ul {
+    @extend .collection;
+  }
+  li {
+    @extend .collection-item;
+  }
+}
